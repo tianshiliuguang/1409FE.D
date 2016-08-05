@@ -1,0 +1,305 @@
+/*网页的全局样式 解决兼容问题*/
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,td,form,input,select,textarea,span,img,a,em,strong,*{ margin:0; padding:0;}
+body{ font-family:"宋体"; font-size:12px; color:#000000;}
+ul,ol,li{ list-style:none;}
+h1,h2,h3,h4,h5,h6{ font-size:14px;}
+input,select,textarea{ vertical-align:middle;}
+img{ border:none; vertical-align:middle;}
+a{ text-decoration:none; color:#333333;}
+a:hover{ color:#009999;}
+.clear{ clear:both; height:0px; width:0px; overflow:hidden;}
+
+.wrap{
+	width:100%;
+	height:1500px;
+	background:url(../img/bg.jpg) no-repeat;
+	overflow: hidden;
+	box-sizing:border-box;
+}
+.line{
+	width:100%;
+	height:13px;
+	background:url(../img/blue.jpg) no-repeat;
+	
+}
+.nav{
+	width:100%;
+	margin-left: 100px;
+}
+.nav ul{
+	width:100%;
+	margin-top: 20px;
+
+}
+.nav li{
+	width:110px;
+	height:56px;
+	line-height:56px;
+	float:left;
+	text-align: center;
+	color:#fff;
+	background:url(../img/2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.nav li:hover{
+	background:url(../img/1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.subnav{
+	position: relative;
+}
+.inner{
+	position: absolute;
+	top:80px;
+	left:50px;
+}
+.first{
+	position: absolute;
+	top:90px;
+	left:57px;
+	-webkit-animation:zheng 10s linear infinite;
+}
+.second{
+	position: absolute;
+    top:96px;
+	left:62px;
+	-webkit-animation:fu 7s linear infinite;
+}
+
+.third{
+	position: absolute;
+    top:112px;
+	left:77px;
+
+}
+.third img{
+	width:94%;
+}
+.four{
+	position: absolute;
+    top:119px;
+	left:85px;
+
+}
+.four img{
+	width:90%;
+}
+.txt{
+	position: absolute;
+    top:140px;
+	left:88px;
+	text-align: center;
+}
+.txt img{
+	width:90%;
+}
+ @-webkit-keyframes zheng{
+     	0%{
+     		-webkit-transform:rotate(0);
+     	}
+     	100%{
+     		-webkit-transform:rotate(360deg);
+     	}
+     }
+@-webkit-keyframes fu{
+     	0%{
+     		-webkit-transform:rotate(0);
+     	}
+
+     	100%{
+     		-webkit-transform:rotate(-360deg);
+     	}
+}
+.dilog{
+	width:436px;
+	height:210px;
+	background:url(../img/11.png) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	top:70%;
+	left:37%;
+}
+.dilog h1{
+	position:absolute;
+	top:18px;
+	left:60px;
+}
+.niu{
+	margin-left: 50px;
+}
+.content{
+     padding-top: 15%;
+     color:#fff;
+     font-size:16px;
+     padding-left: 60px;
+     font-weight: bold;
+}
+.content p{
+	line-height:35px;
+}
+.content input{
+	margin-left:12px;
+}
+.content button{
+	width:78px;
+	height:28px;
+	background: url(../img/13.png) no-repeat;
+	border:none;
+	outline:none;
+	color:#fff;
+	text-align: center;
+	line-height:25px;
+	font-weight:bold;
+	margin-top:10px;
+	margin-left: 10px;
+	
+}
+.right{
+	width:386px;
+	height:370px;
+	position: absolute;
+	top:55%;
+	right:0;
+	-webkit-animation:enter 5s linear;
+
+
+	
+}
+.right ul{
+	width:354px;
+	height:45px;
+	position: absolute;
+    top:-40px;
+    left:40px;
+	background: url(../img/15.png) no-repeat;
+
+}
+.right ul li{
+	float:left;
+	color:#fff;
+	line-height: 60px;
+	width:162px;
+	height:25px;
+	text-align: center;
+
+}
+.panel{
+	padding-top: 10px;
+	width:386px;
+	height:350px;
+	background: url(../img/14.png) no-repeat;
+	background-size:100% 100%;
+}
+.right .panel b{
+	display: block;
+	padding-top:10px;
+	padding-left: 20px;
+	color:#fff;
+	margin-left: 20px;
+	font-size:14px;
+	line-height: 25px;
+}
+@-webkit-keyframes enter{
+     	0%{
+     		-webkit-transform:translateX(100%);
+     	}
+     	50%{
+     		-webkit-transform:translateX(50%);
+     	}
+     
+        100%{
+     		-webkit-transform:translateX(0);
+     	}
+}
+.wrap .left{
+	width:484px;
+	height:589px;
+	background: url(../img/16.png) no-repeat;
+	background-size:100% 100%;
+	position: absolute;
+	z-index: 999;
+	top:50%;
+	left:0;
+	display: none;
+	
+}
+.wrap .left select{
+	position: absolute;
+    left:80px;
+	top:80px;
+	width:330px;
+	height:35px;
+	padding-top: 10px;
+	padding-left: 20px;
+	color:blue;
+	outline: none;
+	background-color: transparent;
+	overflow: hidden; 
+    border-width:0px;
+    border-top-style: none; 
+    border-right-style: none; 
+    border-left-style: none; 
+    border-bottom-style: none;
+	background: url(../img/17.png) no-repeat;
+}
+.left .box{
+	width:320px;
+	height:298px;
+	margin:140px 120px;
+	color:#fff;
+	position: relative;
+
+}
+.left .box .zuo{
+	position: absolute;
+	top:0;
+	left:-10%;
+}
+.left .box .you{
+	position: absolute;
+	top:0;
+	right:0;
+}
+.left .box h5{
+	background: url(../img/18.png) no-repeat;
+	background-size:100% 100%;
+	width:260px;
+	height:30px;
+	line-height: 30px;
+	padding-left: 30px;
+	position: relative;
+
+}
+.left .box h5 img{
+	float:right;
+	margin-top: 10px;
+	margin-right:20px;
+}
+.left .box ul{
+	padding-left: 40px;
+	display: none;
+}
+.left .box ul li{
+	background: url(../img/20.png) no-repeat;
+	background-size: 100% 100%;
+	width:240px;
+	height:23px;
+	line-height: 23px;
+	padding-left: 10px;
+}
+.left .box ul li img{
+	margin-left: 23px;
+}
+.left .box h5 span{
+	position: absolute;
+	left:10px;
+}
+.bottom{
+	position: absolute;
+	bottom:-40%;
+	left:20%;
+}
+.bottom img{
+	width:90%;
+}
+
